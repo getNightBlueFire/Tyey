@@ -1,3 +1,5 @@
+package api;
+
 public class Street {
     private Integer number;
     private String name;

@@ -1,3 +1,5 @@
+package api;
+
 public class Coordinate {
         private String latitude;
         private String longitude;

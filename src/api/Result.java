@@ -1,3 +1,5 @@
+package api;
+
 public class Result {
     private String gender;
     private Name name;
@@ -118,6 +120,23 @@ public class Result {
         this.nat = nat;
         return this;
     }
-
     private String nat;
+
+    @Override
+    public String toString() {
+        return "api.Result{" +
+                "gender='" + gender + '\'' +
+                ", name=" + name +
+                ", location=" + location +
+                ", email='" + email + '\'' +
+                ", login=" + login +
+                ", dob=" + dob +
+                ", registered=" + registered +
+                ", phone='" + phone + '\'' +
+                ", cell='" + cell + '\'' +
+                ", id=" + id +
+                ", picture=" + picture +
+                ", nat='" + nat + '\'' +
+                '}';
+    }
 }

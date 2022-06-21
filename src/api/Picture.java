@@ -1,3 +1,5 @@
+package api;
+
 public class Picture {
     private String large;
     private String medium;

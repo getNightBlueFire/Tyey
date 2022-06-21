@@ -1,3 +1,5 @@
+package api;
+
 public class Login {
     private String uuid;
     private String username;
