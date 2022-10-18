@@ -11,6 +11,10 @@ public class User {
         this.gender = gender;
     }
 
+    public User(){
+
+    }
+
     @Override
     public String toString() {
         return "User{" +

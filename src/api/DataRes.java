@@ -22,4 +22,12 @@ public class DataRes {
     }
 
     private Integer age;
+
+    @Override
+    public String toString() {
+        return "DataRes{" +
+                "date='" + date + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }
