@@ -2,7 +2,7 @@ package api;
 
 import java.time.LocalDateTime;
 
-public class TestInfo {
+public class TestInfo implements Comparable<TestInfo>{
     private int age;
     private LocalDateTime date;
 
@@ -33,5 +33,21 @@ public class TestInfo {
 
     public void setDate(LocalDateTime date) {
         this.date = date;
+    }
+
+    @Override
+    public int compareTo(TestInfo o) {
+        if (this.getAge() == o.getAge()){
+            if (this.getDate().isBefore(o.getDate())){
+                return 1;
+            } else {
+                return -1;
+            }
+        }
+        if(this.getAge()>o.getAge()){
+            return -1;
+        } else {
+            return 1;
+        }
     }
 }
